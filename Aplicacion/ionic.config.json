@@ -1,0 +1,8 @@
+{
+  "name": "Ander",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite",
+  "id": "aa5d57df"
+}
