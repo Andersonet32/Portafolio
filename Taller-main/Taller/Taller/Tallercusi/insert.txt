@@ -1,0 +1,25 @@
+INSERT INTO Clientes (nombre, telefono, email, direccion)
+VALUES ('Juan Pérez', '555-1234', 'juan@example.com', 'Calle 123, Ciudad');
+
+-- Insertar datos en Vehículos
+INSERT INTO Vehiculos (cliente_id, marca, modelo, año, placa)
+VALUES (1, 'Ford', 'Fiesta', 2015, 'ABC-123');
+
+-- Insertar tipos de servicio
+INSERT INTO TiposServicio (nombre_servicio, descripcion)
+VALUES ('Cambio de aceite', 'Cambio de aceite y revisión de filtro'),
+       ('Revisión general', 'Revisión completa del vehículo');
+
+-- Insertar una reserva
+INSERT INTO Reservas (vehiculo_id, servicio_id, fecha_reserva, estado, observaciones)
+VALUES (1, 1, '2024-11-10', 'Pendiente', 'Cliente mencionó ruido en el motor');
+
+-- Insertar piezas en Inventario
+INSERT INTO Inventario (nombre_pieza, descripcion, cantidad, precio_unitario)
+VALUES ('Filtro de aceite', 'Filtro para motor de 4 cilindros', 20, 10.00),
+       ('Aceite de motor', 'Aceite sintético 5W-30', 50, 25.00);
+
+-- Registrar uso de piezas en una reserva
+INSERT INTO UsoPiezas (reserva_id, inventario_id, cantidad_usada)
+VALUES (1, 1, 1), -- Usa un filtro de aceite
+       (1, 2, 3); -- Usa 3 unidades de aceite de motor

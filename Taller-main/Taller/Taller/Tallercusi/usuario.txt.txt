@@ -1,0 +1,11 @@
+CREATE TABLE usuario (
+    usuario_id INT AUTO_INCREMENT,
+    nombre VARCHAR(50),
+    apellido VARCHAR(50),
+    dni VARCHAR(20) ,
+    nombre_usuario VARCHAR(50) ,
+    telefono VARCHAR(20),
+    correo_electronico VARCHAR(100) ,
+    contraseña VARCHAR(255),
+    id_cargo INT(1),
+    PRIMARY KEY (usuario_id));
